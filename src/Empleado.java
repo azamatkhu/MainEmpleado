@@ -1,4 +1,10 @@
-package PACKAGE_NAME;
+// Creamos una clase abstracto. Luego, cuando creamos otras clases lo implementamos.
+public abstract class Empleado {
+    private String nombre;
 
-public class Empleado {
+    public Empleado(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public abstract double calcularSalario();
 }
